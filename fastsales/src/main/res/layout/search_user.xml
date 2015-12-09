@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg">
+    <TextView
+        android:id="@+id/tvUpdateUserData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/title_SearchUser"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:id="@+id/rlSearchUser"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/tvUpdateUserData"
+        android:layout_marginTop="10dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="#C1C1C1" >
+
+        <TextView
+            android:id="@+id/tvSearchUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/user_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etSearchUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvSearchUserName"
+            android:layout_alignBottom="@+id/tvSearchUserName"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tvSearchUserName"
+            android:ems="6" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvSelectUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvSearchUserName"
+            android:layout_below="@+id/tvSearchUserName"
+            android:layout_marginTop="20dp"
+            android:text="@string/txtSelectUser"
+            android:textColor="@android:color/black" />
+
+
+        <Spinner
+            android:id="@+id/spUserList"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@+id/tvSelectUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:popupBackground="#E1E1E1"
+            android:spinnerMode="dialog" />
+
+        <ImageButton
+            android:id="@+id/ibtnSearchUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/etSearchUserName"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/etSearchUserName"
+            android:src="@mipmap/search_icon" />
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spUserList"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/action_Ok" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

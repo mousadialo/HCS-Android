@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Fast Sales</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_login">Login</string>
+    <string name="action_join">Join</string>
+    <string name="action_back">Back</string>
+    <string name="action_help">Help</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_updateUser">Update User</string>
+    <string name="action_changePin">Change Pin</string>
+    <string name="action_Save">Save</string>
+    <string name="action_Ok">Ok</string>
+    <string name="action_paySale">Pay order</string>
+    <string name="action_placeOrder">Place order</string>
+    <string name="action_addProduct">Add product</string>
+    <string name="action_deleteProduct">Delete product</string>
+
+    <string name="action_l_join_us">Join Now...</string>
+    <string name="action_l_SearchUser"><u>Search user</u></string>
+
+    <string name="title_join_us">Join Now</string>
+    <string name="title_UpdateUserData">Update User Data</string>
+    <string name="title_SearchUser">Find User</string>
+
+    <string name="user_name">User name</string>
+    <string name="pin">PIN</string>
+
+    <string name="error_required">%1$s is required</string>
+
+    <string name="txtReceivedUser">User in approval system....</string>
+    <string name="txtInactiveUser">User is inactive....</string>
+    <string name="txtcancelledUser">User was cancelled....</string>
+    <string name="txtUserPassX">User or Password is incorrect</string>
+
+    <string name="txtWelcomeMenu">Welcome %1$s!</string>
+
+    <string name="txtFirstName">First Name</string>
+    <string name="txtLastName">Last Name</string>
+    <string name="txtAddress">Address</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtUniqueUserName">Unique Username</string>
+    <string name="txtChooseUniqueUserName">Choose Unique Username</string>
+    <string name="txtConfirmPin">Confirm PIN</string>
+    <string name="txtMgsPinEquals">%1$s is not equals</string>
+    <string name="txtUserPendingAcept">User registered and pending to accep</string>
+    <string name="txtUserCannotBeRegistered">User cannot be registered</string>
+    <string name="txtMgsPin">Please select a 4 number Personal Identification Number (PIN).</string>
+    <string name="txtCompletePIN">PIN should be of 4 number</string>
+
+    <string name="txtSelectUser">Select user:</string>
+    <string name="txtSelectAnUser">Select an user</string>
+    <string name="txtNoResultSearch">There are no results of the research</string>
+    <string name="txtUserUpdated">User updated correctly</string>
+    <string name="txtUserNoUpdated">The user data could not be updated</string>
+
+    <string name="txtUserStatus">User status</string>
+    <string name="txtUserType">User type</string>
+
+    <string name="txtProduct">Product</string>
+    <string name="txtQuantity">Quantity</string>
+    <string name="txtTPrice">T. Price</string>
+    <string name="txtNoProoductsAdded">No products added</string>
+
+    <string name="openDrawer">Open drawer</string>
+    <string name="closeDrawer">Close drawer</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HCSCommon</string>
+
+    <string name="a_close">Close</string>
+
+    <string name="t_InfoTitle">Information</string>
+
+    <string name="txt_MsgTask">Its loading....</string>
+    <string name="txt_TitleTask">Please wait!</string>
+</resources>

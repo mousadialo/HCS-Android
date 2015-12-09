@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HComfortSolutions.iml" filepath="$PROJECT_DIR$/HComfortSolutions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastsales/fastsales.iml" filepath="$PROJECT_DIR$/fastsales/fastsales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcscommon/hcscommon.iml" filepath="$PROJECT_DIR$/hcscommon/hcscommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medicinealarm/medicinealarm.iml" filepath="$PROJECT_DIR$/medicinealarm/medicinealarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mypracticeapplication/mypracticeapplication.iml" filepath="$PROJECT_DIR$/mypracticeapplication/mypracticeapplication.iml" />
+    </modules>
+  </component>
+</project>

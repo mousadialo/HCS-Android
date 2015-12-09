@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvUpdateUserData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/title_UpdateUserData"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvSearchUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvUpdateUserData"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/action_l_SearchUser"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blue_dark" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSearchUser"
+        android:layout_below="@+id/tvSearchUser"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/tvUserName"
+        android:layout_alignBottom="@+id/tvUserName"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvSearchUser"
+        android:ems="8" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUserName"
+        android:layout_below="@+id/etUserName"
+        android:layout_marginTop="15dp"
+        android:text="@string/txtFirstName"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/tvFirstName"
+        android:layout_alignBottom="@+id/tvFirstName"
+        android:layout_alignLeft="@+id/etUserName"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFirstName"
+        android:layout_below="@+id/etFirstName"
+        android:layout_marginTop="15dp"
+        android:text="@string/txtLastName"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/tvLastName"
+        android:layout_alignBottom="@+id/tvLastName"
+        android:layout_alignLeft="@+id/etFirstName"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvLastName"
+        android:layout_below="@+id/etLastName"
+        android:layout_marginTop="15dp"
+        android:text="@string/txtAddress"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/tvAddress"
+        android:layout_alignBottom="@+id/tvAddress"
+        android:layout_alignLeft="@+id/etLastName"
+        android:ems="8"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/tvEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvAddress"
+        android:layout_below="@+id/etAddress"
+        android:layout_marginTop="15dp"
+        android:text="@string/txtEmail"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@+id/tvEmailAddress"
+        android:layout_alignBottom="@+id/tvEmailAddress"
+        android:layout_alignLeft="@+id/etAddress"
+        android:ems="8" />
+
+    <CheckBox
+        android:id="@+id/cbChangePin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEmailAddress"
+        android:layout_below="@+id/etEmailAddress"
+        android:layout_marginTop="10dp"
+        android:text="@string/action_changePin" />
+
+    <RelativeLayout
+        android:id="@+id/rlChangePin"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/cbChangePin"
+        android:layout_marginTop="0dp"
+        android:background="#C1C1C1"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/tvMsgPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/txtMgsPin"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/tvPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvMsgPin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/pin"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/etPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignBaseline="@+id/tvPin"
+            android:layout_alignBottom="@+id/tvPin"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvPin"
+            android:ems="8"
+            android:inputType="numberPassword"
+            android:maxLength="4" />
+
+        <TextView
+            android:id="@+id/tvVerifyPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPin"
+            android:layout_below="@+id/tvPin"
+            android:layout_marginTop="15dp"
+            android:text="@string/txtConfirmPin"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/etVerifyPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignBaseline="@+id/tvVerifyPin"
+            android:layout_alignBottom="@+id/tvVerifyPin"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvVerifyPin"
+            android:ems="8"
+            android:inputType="numberPassword"
+            android:maxLength="4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlStatusAndType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/rlChangePin"
+        android:layout_marginTop="5dp"
+        android:background="#C1C1C1"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <TextView
+        android:id="@+id/tvUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/txtUserStatus"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/spUserStatusList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:popupBackground="#E1E1E1"
+            android:spinnerMode="dialog"
+            android:layout_alignTop="@+id/tvUserStatus"
+            android:layout_toRightOf="@+id/tvUserStatus"
+            android:layout_toEndOf="@+id/tvUserStatus"
+            android:layout_marginStart="27dp" />
+
+        <TextView
+            android:id="@+id/tvUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvUserStatus"
+            android:layout_below="@+id/tvUserStatus"
+            android:layout_marginTop="15dp"
+            android:text="@string/txtUserType"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/spUserTypeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:popupBackground="#E1E1E1"
+            android:spinnerMode="dialog"
+            android:layout_alignTop="@+id/tvUserType"
+            android:layout_toRightOf="@+id/tvUserType"
+            android:layout_toEndOf="@+id/tvUserType"
+            android:layout_marginStart="27dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlStatusAndType"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_Save" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlStatusAndType"
+        android:layout_alignParentRight="true"
+        android:text="@string/action_back" />
+
+</RelativeLayout>
