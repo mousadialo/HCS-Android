@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">My Practice Application</string>
     <string name="action_settings">Settings</string>
+    <string name="textNomUsuario">Nombre de usuario</string>
+    <string name="textContrasena">Contraseña</string>
+    <string name="textSelectColor">Seleccionar color</string>
+    <string name="textActionPresioname">Presioname!!!</string>
+    <string name="textActionRegresarPracticas">Regresar a practicas</string>
+    <string name="textPractica6">Practica 6</string>
+    <string name="textPractica7">Practica 7</string>
+    <string name="title_activity_lista_simple">ListaSimpleActivity</string>
+    <string name="title_activity_lista_personalizada">ListaPersonalizadaActivity</string>
 </resources>

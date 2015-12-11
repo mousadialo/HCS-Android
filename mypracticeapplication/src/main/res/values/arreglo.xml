@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="elementos_lista">
+        <item>Android</item>
+        <item>IOS</item>
+        <item>Windows Phone</item>
+        <item>Blackberry</item>
+        <item>Symbian</item>
+    </string-array>
+
+    <string-array name="elementos_descripcion">
+        <item>Sistema operativo movil android</item>
+        <item>Sistema operativo movil IOS</item>
+        <item>Sistema operativo movil Windows Phone</item>
+        <item>Sistema operativo movil Blackberry</item>
+        <item>Sistema operativo movil Symbian</item>
+    </string-array>
+</resources>

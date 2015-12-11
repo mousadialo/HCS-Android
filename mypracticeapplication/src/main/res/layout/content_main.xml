@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvElemet"
+        android:id="@+id/tvPracticas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elemento TextView!" />
-
-    <EditText
-        android:id="@+id/etElemt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="Practicas!" />
 
     <Button
-        android:id="@+id/btnElemnt"
+        android:id="@+id/btnPractica6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Elemento Button"/>
+        android:text="Practica 6"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btnPractica7Xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica 7 Interfaz XML"/>
+
+    <Button
+        android:id="@+id/btnPractica7Tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practica 7 Tab"/>
+
+</LinearLayout>

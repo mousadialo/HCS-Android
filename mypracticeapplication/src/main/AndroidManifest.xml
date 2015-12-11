@@ -2,6 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hcs.practice" >
 
+    <!-- Permite llamar a numeros telefonicos directamente -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- Permite establecer conexiones a internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permite leer el estado del dispositivo y ids -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Permite enviar sms -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- Permite identificar cuando un sms ha llegado -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- Permite acceso a la camara, tomar fotos y video -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Permite GRABAR SONIDOS DESDE EL DISPOSITIVO -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Permite leer toda la info de los contactos en el dispositivo -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Impide que el telefono entre en modo suspencion -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Permite crear conexiones bloothot -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- Permite activar o hacer que el dispositivo vibre -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +50,36 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".practica6.MainActivity6"
+            android:label="@string/textPractica6"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".practica6.SegundoActivity"
+            android:label="@string/textPractica6"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".practica7.MainActivity7"
+            android:label="@string/textPractica7"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".practica7.MainTabActivity"
+            android:label="@string/textPractica7"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".practica7.listas.ListaSimpleActivity"
+            android:label="@string/title_activity_lista_simple"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".practica7.listas.ListaPersonalizadaActivity"
+            android:label="@string/title_activity_lista_personalizada"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

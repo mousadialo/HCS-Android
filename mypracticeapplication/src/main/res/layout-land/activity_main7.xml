@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7"
+    android:background="@color/colorBlanco"
+    android:padding="@dimen/margenActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNomUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen_elemento_interfaz"
+            android:text="@string/textNomUsuario"
+            android:textColor="@color/colorAzul"/>
+
+        <EditText
+            android:id="@+id/etNomUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen_elemento_interfaz" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearl1" >
+
+        <TextView
+            android:id="@+id/tvContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen_elemento_interfaz"
+            android:text="@string/textContrasena"
+            android:textColor="@color/colorNaranja"/>
+
+        <EditText
+            android:id="@+id/etContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen_elemento_interfaz" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearl2"
+        android:layout_margin="@dimen/margen_elemento_interfaz"
+        android:text="@string/textSelectColor" />
+
+    <Spinner
+        android:id="@+id/spColor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvColor"
+        android:entries="@array/array_colores"/>
+
+    <Button
+        android:id="@+id/btnPresioname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spColor"
+        android:text="@string/textActionPresioname"
+        android:layout_alignTop="@+id/spColor"
+        android:layout_alignRight="@+id/linearl2"
+        android:layout_alignEnd="@+id/linearl2"/>
+
+    <Button
+        android:id="@+id/btnReturnToPracticas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textActionRegresarPracticas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

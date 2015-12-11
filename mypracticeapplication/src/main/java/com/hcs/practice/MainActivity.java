@@ -1,5 +1,6 @@
 package com.hcs.practice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,35 +9,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
+
+import com.hcs.practice.practica6.MainActivity6;
+import com.hcs.practice.practica7.MainActivity7;
+import com.hcs.practice.practica7.MainTabActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button miButton;
+    private Button btnPractica6, btnPractica7Xml, btnPractica7Tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-    }
-
-    private void layoutInCode(){
-        LinearLayout miLinearLayout = new LinearLayout(this);
-        miLinearLayout.setOrientation(LinearLayout.VERTICAL);
-
-        miButton = new Button(this);
-        miButton.setText("Button creado desde codigo");
-
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-
-        miButton.setLayoutParams(layoutParams);
-    }
-
-    private void layoutInXML(){
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -48,7 +35,32 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        btnPractica6 = (Button)findViewById(R.id.btnPractica6);
+        btnPractica6.setOnClickListener(onClickListener);
+
+        btnPractica7Xml = (Button)findViewById(R.id.btnPractica7Xml);
+        btnPractica7Xml.setOnClickListener(onClickListener);
+
+        btnPractica7Tab = (Button)findViewById(R.id.btnPractica7Tab);
+        btnPractica7Tab.setOnClickListener(onClickListener);
     }
+
+    private View.OnClickListener onClickListener = new View.OnClickListener(){
+        @Override
+        public void onClick (View v) {
+            Intent intent = null;
+            if(v == btnPractica6) {
+                intent = new Intent(MainActivity.this, MainActivity6.class);
+            } else if (v == btnPractica7Xml) {
+                intent = new Intent(MainActivity.this, MainActivity7.class);
+            } else if (v == btnPractica7Tab) {
+                intent = new Intent(MainActivity.this, MainTabActivity.class);
+            }
+            startActivity(intent);
+            finish();
+        }
+    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
